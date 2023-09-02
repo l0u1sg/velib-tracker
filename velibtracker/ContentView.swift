@@ -12,17 +12,12 @@ struct ContentView: View {
     @State private var isLocationAuthorized = false
     var body: some View {
         VStack {
-            var latitude = locationManager.userLocation?.latitude
-            var longitude = locationManager.userLocation?.longitude
             if locationManager.isLocationAuthorized {
                 // Afficher le contenu de l'application une fois que la localisation est autorisée
-                Text("Latitude: \(locationManager.userLocation?.latitude ?? 0), Longitude: \(locationManager.userLocation?.longitude ?? 0)")
             } else {
                 // Afficher un message ou un bouton pour demander l'autorisation de localisation
                 Button("Autoriser la localisation") {
-                    locationManager.onLocationUpdate = {
-                        // Appel à la requête API lorsque la localisation est autorisée
-                    }
+                    openAppSettings()
                 }
             }
         }
@@ -35,6 +30,7 @@ struct ContentView: View {
         }
         NavigationView {
             ScrollView {
+                Text("Stations dans un rayon de 5km")
                 ForEach(velibStations, id: \.stationcode) { station in
                     StationComponent(station: station)
                         .padding(.bottom, 16)
@@ -45,6 +41,16 @@ struct ContentView: View {
         
     }
     
+}
+
+private func openAppSettings() {
+    guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else {
+        return
+    }
+    
+    if UIApplication.shared.canOpenURL(settingsURL) {
+        UIApplication.shared.open(settingsURL)
+    }
 }
 
 

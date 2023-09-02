@@ -25,10 +25,19 @@ struct StationComponent: View {
                     .foregroundColor(.secondary)
 
                 Spacer()
-
-                Text("Disponibles: \(station.numbikesavailable)")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
+                
+                VStack {
+                    Text("Disponibles: \(station.numbikesavailable)")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                    Text("Electriques: \(station.ebike)")
+                        .font(.subheadline)
+                        .foregroundColor(.blue)
+                    Text("Mécaniques: \(station.mechanical)")
+                        .font(.subheadline)
+                        .foregroundColor(.green)
+                }
+               
             }
         }
         .padding()

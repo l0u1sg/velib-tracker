@@ -7,14 +7,16 @@
 
 import SwiftUI
 
+
 @main
 struct velibtrackerApp: App {
+    @ObservedObject var locationManager = LocationManager()
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
-    // init() {
-    //    fetchVelibData()
-    //  }
+     init() {
+         fetchVelibDataLocation(lon: Double(locationManager.userLocation?.longitude ?? 0), lat: Double(locationManager.userLocation?.latitude ?? 0))
+      }
 }
