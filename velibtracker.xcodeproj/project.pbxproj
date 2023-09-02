@@ -11,6 +11,9 @@
 		2C5BDABF2AA3611000DBEC93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BDABE2AA3611000DBEC93 /* ContentView.swift */; };
 		2C5BDAC12AA3611000DBEC93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5BDAC02AA3611000DBEC93 /* Assets.xcassets */; };
 		2C5BDAC52AA3611000DBEC93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5BDAC42AA3611000DBEC93 /* Preview Assets.xcassets */; };
+		2CDC317E2AA3654800BF98B9 /* VelibStationStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDC317D2AA3654800BF98B9 /* VelibStationStruct.swift */; };
+		2CDC31802AA3672600BF98B9 /* StationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDC317F2AA3672600BF98B9 /* StationComponent.swift */; };
+		2CDC31822AA387AB00BF98B9 /* fetchVelibData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDC31812AA387AB00BF98B9 /* fetchVelibData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		2C5BDAC02AA3611000DBEC93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C5BDAC22AA3611000DBEC93 /* velibtracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = velibtracker.entitlements; sourceTree = "<group>"; };
 		2C5BDAC42AA3611000DBEC93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CDC317D2AA3654800BF98B9 /* VelibStationStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelibStationStruct.swift; sourceTree = "<group>"; };
+		2CDC317F2AA3672600BF98B9 /* StationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationComponent.swift; sourceTree = "<group>"; };
+		2CDC31812AA387AB00BF98B9 /* fetchVelibData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchVelibData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +58,14 @@
 		2C5BDABB2AA3611000DBEC93 /* velibtracker */ = {
 			isa = PBXGroup;
 			children = (
+				2CDC317C2AA3653200BF98B9 /* struct */,
+				2C5BDACB2AA3632C00DBEC93 /* components */,
 				2C5BDABC2AA3611000DBEC93 /* velibtrackerApp.swift */,
 				2C5BDABE2AA3611000DBEC93 /* ContentView.swift */,
 				2C5BDAC02AA3611000DBEC93 /* Assets.xcassets */,
 				2C5BDAC22AA3611000DBEC93 /* velibtracker.entitlements */,
 				2C5BDAC32AA3611000DBEC93 /* Preview Content */,
+				2CDC31812AA387AB00BF98B9 /* fetchVelibData.swift */,
 			);
 			path = velibtracker;
 			sourceTree = "<group>";
@@ -67,6 +76,22 @@
 				2C5BDAC42AA3611000DBEC93 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C5BDACB2AA3632C00DBEC93 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				2CDC317F2AA3672600BF98B9 /* StationComponent.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		2CDC317C2AA3653200BF98B9 /* struct */ = {
+			isa = PBXGroup;
+			children = (
+				2CDC317D2AA3654800BF98B9 /* VelibStationStruct.swift */,
+			);
+			path = struct;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CDC317E2AA3654800BF98B9 /* VelibStationStruct.swift in Sources */,
 				2C5BDABF2AA3611000DBEC93 /* ContentView.swift in Sources */,
+				2CDC31822AA387AB00BF98B9 /* fetchVelibData.swift in Sources */,
+				2CDC31802AA3672600BF98B9 /* StationComponent.swift in Sources */,
 				2C5BDABD2AA3611000DBEC93 /* velibtrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

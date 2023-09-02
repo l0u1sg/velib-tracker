@@ -14,4 +14,7 @@ struct velibtrackerApp: App {
             ContentView()
         }
     }
+    init() {
+        fetchVelibData()
+    }
 }
