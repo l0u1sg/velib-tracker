@@ -16,5 +16,5 @@ struct velibtrackerApp: App {
     }
     init() {
         fetchVelibData()
-    }
+     }
 }

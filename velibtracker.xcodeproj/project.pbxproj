@@ -14,6 +14,7 @@
 		2CDC317E2AA3654800BF98B9 /* VelibStationStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDC317D2AA3654800BF98B9 /* VelibStationStruct.swift */; };
 		2CDC31802AA3672600BF98B9 /* StationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDC317F2AA3672600BF98B9 /* StationComponent.swift */; };
 		2CDC31822AA387AB00BF98B9 /* fetchVelibData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDC31812AA387AB00BF98B9 /* fetchVelibData.swift */; };
+		2CDC31892AA38B6000BF98B9 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDC31882AA38B6000BF98B9 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2CDC317D2AA3654800BF98B9 /* VelibStationStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelibStationStruct.swift; sourceTree = "<group>"; };
 		2CDC317F2AA3672600BF98B9 /* StationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationComponent.swift; sourceTree = "<group>"; };
 		2CDC31812AA387AB00BF98B9 /* fetchVelibData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchVelibData.swift; sourceTree = "<group>"; };
+		2CDC31882AA38B6000BF98B9 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		2C5BDABB2AA3611000DBEC93 /* velibtracker */ = {
 			isa = PBXGroup;
 			children = (
+				2CDC31832AA38AAE00BF98B9 /* utils */,
 				2CDC317C2AA3653200BF98B9 /* struct */,
 				2C5BDACB2AA3632C00DBEC93 /* components */,
 				2C5BDABC2AA3611000DBEC93 /* velibtrackerApp.swift */,
@@ -65,7 +68,6 @@
 				2C5BDAC02AA3611000DBEC93 /* Assets.xcassets */,
 				2C5BDAC22AA3611000DBEC93 /* velibtracker.entitlements */,
 				2C5BDAC32AA3611000DBEC93 /* Preview Content */,
-				2CDC31812AA387AB00BF98B9 /* fetchVelibData.swift */,
 			);
 			path = velibtracker;
 			sourceTree = "<group>";
@@ -92,6 +94,15 @@
 				2CDC317D2AA3654800BF98B9 /* VelibStationStruct.swift */,
 			);
 			path = struct;
+			sourceTree = "<group>";
+		};
+		2CDC31832AA38AAE00BF98B9 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				2CDC31812AA387AB00BF98B9 /* fetchVelibData.swift */,
+				2CDC31882AA38B6000BF98B9 /* LocationManager.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 			files = (
 				2CDC317E2AA3654800BF98B9 /* VelibStationStruct.swift in Sources */,
 				2C5BDABF2AA3611000DBEC93 /* ContentView.swift in Sources */,
+				2CDC31892AA38B6000BF98B9 /* LocationManager.swift in Sources */,
 				2CDC31822AA387AB00BF98B9 /* fetchVelibData.swift in Sources */,
 				2CDC31802AA3672600BF98B9 /* StationComponent.swift in Sources */,
 				2C5BDABD2AA3611000DBEC93 /* velibtrackerApp.swift in Sources */,
@@ -297,6 +309,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Display Velib stations near your current location";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -335,6 +348,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Display Velib stations near your current location";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
